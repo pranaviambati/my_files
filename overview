@@ -1,0 +1,67 @@
+
+
+what are roles and responsiblites as a Devops Engineer:
+Roles and responsiblites as a devops Engineer.
+
+When ever devlopers required source code we can help them by clonning source code from remote repository  to local repository.
+cloning source code into there local repository by using  commnad “git clone urlofrepository”.
+
+When ever developer writing source code or modifiyed source code after development source code we will lock remote repository for 
+testing source code .
+
+As a devops engineer cloning source code to local repository using git command “git clone url”; now add source code to stage area by using git command “git add filename” and then commit source code into local repository by using git command “git commit -m “message” filename.
+
+Note:For commiting source code to local repository need some user cridentials  related  configurations in local repository. These configurations are stored in  .gitconfig file in user home directory.
+   
+    git config - -global user.name “user name”
+    git config - -global user.email “user email”
+
+Now source code is available in  local repository and then merging source code into main /master branch .we can merge source code by using git command “git merge branchname” and push source code from local repository to remote  repository by using git command “git push”
+
+Note:
+when ever you want to push source code to remote repository it prompt for user cerdientails i.e; username is “ your username “& password is “token of git.”
+we can store creditians permently in local repositoy by using  git command “git config  - -global credential.helper store”.
+After configurtion first time it prompt for user credentials for storing values in local repositories.
+
+For pushing new branch local to remote repository  by using git command “git push origin branchname”.
+
+when ever you want to merge source code you should be in master branch .
+check currently your in which branch by using git command “git branch”
+switch to master/main branch from other branch use git command “git checkout branchname”.
+
+
+creating new branch for release.create new branch by using git command “git branch branchname”.
+and push release source code from local repository to remote repository by using command “git push origin branchname”
+
+Complie release source code by using automation build tool maven by using maven command “mvn install”
+ 
+while compiling any conflict occur manually we will remove conflits and again compiling error free source code.
+
+After sucessfull compilation we will deploy war file in to  QA environment for testing purpose. 
+Deploying war file in QA Environment is nothing but Continous integration.
+Before deploying war file in to Production environment we need to test application in different test environments for checking better performance,stablity,speed and user interface.
+
+i. Manual testing : As a manual  tester testing  functionality application manually.
+ii.Automation testing: Testing functionality of application by using automation tools .
+Iii.SIT (system integartion testing): In SIT testing we are going to testing each and every module and combing all modules we are testing functionality of application.
+ Eg: Module is nothing but one option in any application like in flipkart we have search,cart,price,bag options.
+iv. Regression Testing: while developing new feature we made some changes in database. Now we need to test not only changed module we need to test modules which integrated with it.
+v.UAT Testing (User acceptance testing) : By using some dummy details we are going checking functionality of application.
+vi.Performance Testing: sometimes more traffic in application when ever n number of enduser accesing application .we need to test perfoemance  and user interface of application whith heavy traffic.
+vii.staging/preprod: we will deploy war file in pre-prod before deploying production for checking functionality of application in production.
+
+After sucessful testing in required QA environments now, we are going to deploying  war file in to tomcat server in production Environment.
+
+Deploying war file in production environment is nothing but continous Delivery.
+
+Now end users can access web application through broswer by hitting http://ip:8080/warfilename
+
+
+
+
+
+
+
+
+
+
