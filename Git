@@ -1,0 +1,71 @@
+GIT:
+====
+Git is a distributed version control system
+Git is source code management tool (SCM)
+Git is version control system (VCS)
+Git is Revision control system (RCS)
+=================================================
+How to create git local repository :
+create a new directory.eg: mkdir my_files
+Inside directory give git command "git init" it initalize local repository. 
+Eg: cd my_files 
+    git init 
+
+Now local git repository is ready to use.
+ create files and directories in git 
+Files : vim filename
+directory : mkdir Directoryname
+
+Add source code to stage area :
+git add filename or
+git add .
+ 
+commit files in to local repository from stage area
+
+git commit -m "msg" filename
+
+For skippking stage are for commiting files.
+
+git commit -am "msg"
+
+push source code local to remote repository.
+ Before pushing you need to configure username & remote repository url
+ create a remote repository in github matching with local repository name.
+
+git remote add username <url of git repo>
+git push username
+=============================================================
+How to clone source code from  remote repository  to local machine?
+git clone url_of_repository
+
+How to add source code  into stage area?
+git add filename 
+
+How to commit source code from stage area to local repository?
+git commit -m "msg" filename
+
+How to check changes in files at source area?
+git diff filename
+
+How to check changes in files at stage area ?
+ git diff --staged flename
+
+How to check changes in file after commiting into local repository?
+git show filename
+
+How to restore file after commiting into local repository ?
+git checkout commitID^ filename
+
+How to check or get commitid ?
+git log 
+
+As per filename
+git log filename
+
+As per username
+git log --authoer="username" filename
+========================================================================
+
+
+
+
