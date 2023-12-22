@@ -32,7 +32,11 @@ push source code local to remote repository.
  Before pushing you need to configure username & remote repository url
  create a remote repository in github matching with local repository name.
 
+git remote add origin urlofremoterepostory
+git push -u -f origin master
+
 git remote add username <url of git repo>
+
 git push username
 =============================================================
 How to clone source code from  remote repository  to local machine?
